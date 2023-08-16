@@ -12,7 +12,7 @@ export const SidebarData = [
   },
   {
     title: 'Image & Video',
-    path: '/reports',
+    path: '/updateimagevideo',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },

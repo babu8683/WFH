@@ -11,11 +11,11 @@ function Services() {
 
   const handleSubmit = (event) => {
       event.preventDefault();
-      // Handle form submission here based on the selected option
+     
       if (selectedOption === 'link') {
-          // Handle link update
+        
       } else if (selectedOption === 'pdf') {
-          // Handle PDF upload
+       
       }
   };
 

@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
-import Reports from "./pages/Reports";
+import UpdateImageVideo from "./pages/UpdateImageVideo";
 import Products from "./pages/Products";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Services />} />
-          <Route path="/reports" element={<Reports />} />
+          <Route path="/updateimagevideo" element={<UpdateImageVideo />} />
           <Route path="/products" element={<Products />} />
         </Routes>
       </Router>
