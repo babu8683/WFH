@@ -2,7 +2,8 @@
   background-color: #0ca040;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  
   align-items: center;
 }
 
@@ -74,3 +75,64 @@
 span {
   margin-left: 16px;
 }
+
+
+/* Navbar.css */
+.logo {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.logo-title{
+  
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #0ca040;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: 80px; 
+
+
+}
+.logo-title{
+  color: #fff;
+}
+
+.dropdown-menu li {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #175e0c;
+  cursor: pointer;
+
+}
+
+.dropdown:hover + .dropdown-menu {
+  display: block;
+}
+
