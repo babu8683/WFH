@@ -24,8 +24,9 @@ function Navbar() {
           </Link>
 
         
-            <h2 className="logo-title">Welcome <span>Rajneesh Rana</span> </h2>
+            <h2 className="logo-title">Logo </h2>
           <div className="logo" onClick={toggleDropdown}>
+            <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />
           </div>
         </div>

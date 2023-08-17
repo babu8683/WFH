@@ -18,31 +18,31 @@ export const SidebarData = [
   },
   {
     title: 'How To Use',
-    path: '/products',
+    path: '/howtouse',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },
   {
     title: 'Certificate',
-    path: '/team',
+    path: '/certificate',
     icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },
   {
     title: 'Waste Category',
-    path: '/messages',
+    path: '/wastecategory',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
     title: 'Registered User',
-    path: '/support',
+    path: '/user',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   },
   {
     title: 'Profile',
-    path: '/messages',
+    path: '/profile',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
