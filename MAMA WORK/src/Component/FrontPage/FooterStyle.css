@@ -1,0 +1,41 @@
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #095F09 !important;
+    top: 0;
+    color: #fff;
+    display: flex;
+}
+.footer-start{
+    width: 30%;
+    height: 100%;
+}
+
+.footer-start h1{
+    margin: 20px 0;
+    font-size: 1.6rem;
+ }
+.footer-mid{
+    width: 30%;
+    height: 100%;
+}
+
+.footer-mid h1{
+    margin: 20px 0;
+    font-size: 1.6rem;
+ }
+.footer-end{
+    width: 30%;
+    height: 100%;
+}
+
+.footer-end h1{
+   margin: 20px 0;
+   font-size: 1.6rem;
+}
+.social{
+    display: flex;
+    gap: 10px;
+    font-size: 1.4rem;
+    margin: 20px 0;
+}

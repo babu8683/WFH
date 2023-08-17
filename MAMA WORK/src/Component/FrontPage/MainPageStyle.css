@@ -1,0 +1,297 @@
+
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.intro-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .content h1{
+    font-size: 1rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.hero .content p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.content .btn{
+    margin: 1rem 0.2rem;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+/* Services Section*/
+
+.MainpageSarvices{
+    width: 100%;
+    height: fit-content;
+    
+}
+.MainpageSarvices .Service-Contain {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.MainpageSarvices .Service-Contain h1{
+    font-size: 4rem;
+    color: green;
+}
+
+.MainpageSarvices .Service-Cards{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+    
+}
+.MainpageSarvices .Service-Cards .card{
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+}
+.MainpageSarvices .Service-Cards .card h2{
+    color: #000;
+    font-size: large;
+}
+.MainpageSarvices .Service-Cards .card p{
+    color: #000;
+    font-size: medium;
+}
+.MainpageSarvices .Service-Cards .card img{
+    width: 90%;
+    height: 80%;
+    /* border: solid; */
+    border-radius: 5px;
+
+}
+.Servicebtn{
+    background-color: #e2cc15;
+    outline-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    width: 130px;
+    height: 50px;
+    font-size: 14px!important;
+    padding: 14px 25px!important;
+
+}
+.MainpageSarvices .Service-Cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.6s;
+    
+}
+
+/* Our profile */
+.MainpageProfile{
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0;
+
+}
+.MainpageProfile .name{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+.MainpageProfile .name h1{
+    font-size: 4rem;
+    color: green;
+}
+
+.MainpageProfile .Profile-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.MainpageProfile .Profile-box h1{
+    font-size: 4rem;
+    color: green;
+}
+
+.MainpageProfile .Profile-box .card{
+    width: 100%;
+}
+.MainpageProfile .Profile-box .card img{
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+
+/*We Treat and gallery*/
+
+.MainpageWeTreat{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+    
+    /* background-color: antiquewhite; */
+}
+.MainpageWeTreat .Treat-Contain {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px ;
+    
+}
+
+.MainpageWeTreat .Treat-Contain h1{
+    font-size: 4rem;
+    color: green;
+}
+
+.MainpageWeTreat .Treat-Cards{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+.MainpageWeTreat .Treat-Cards .card{
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: antiquewhite;
+
+}
+.MainpageWeTreat .Treat-Cards .card h2{
+    color: #000;
+    font-size: large;
+    font-weight: 200;
+}
+
+.MainpageWeTreat .Treat-Cards .card img{
+    width: 90%;
+    height: 80%;
+    /* border: solid; */
+    border-radius: 5px;
+
+}
+.Servicebtn{
+    background-color: #e2cc15;
+    outline-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    width: 130px;
+    height: 50px;
+    font-size: 14px!important;
+    padding: 14px 25px!important;
+
+}
+.MainpageWeTreat .Treat-Cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.6s;
+    
+}
+
+
+
+@media screen and (max-width:640px) {
+    .hero .content h1{
+        font-size: 1rem;
+        padding: 0.6rem 0 1.5rem;
+    }
+    
+    .hero .content p{
+        font-size: 1.4rem;
+    }
+    .MainpageSarvices .Service-Contain h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:740px) {
+    
+    .MainpageSarvices .Service-Cards{
+       
+        grid-template-columns:  1fr;
+        
+        
+    }
+
+    .MainpageWeTreat .Treat-Cards{
+       
+        grid-template-columns:  1fr;
+    }
+    .MainpageWeTreat .Treat-Cards .card h2{
+        color: #000;
+        font-size: large;
+        font-weight: 700;
+    }
+
+    .MainpageProfile .Profile-box{
+        flex-direction: column-reverse;
+    
+    }
+    
+}
