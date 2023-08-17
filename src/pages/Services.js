@@ -21,30 +21,40 @@ function Services() {
 
   return (
     <div className="container">
-      <button className="button" onClick={() => setShowForm(true)}>Update Services</button>
-      {showForm && (
-        <div className="form">
-          <select className="select" value={selectedOption} onChange={handleOptionChange}>
-            <option value="link">Update Link</option>
-            <option value="pdf">Upload PDF</option>
-          </select>
-          <form onSubmit={handleSubmit} className="input-group">
-            {selectedOption === 'link' && (
-              <div>
-                <label>New Link:</label>
-                <input type="text" name="link" />
-              </div>
-            )}
-            {selectedOption === 'pdf' && (
-              <div>
-                <label>Upload PDF:</label>
-                <input type="file" name="pdf" />
-              </div>
-            )}
-            <button type="submit" className="submit-button">Submit</button>
-          </form>
-        </div>
-      )}
+      <div className="container-data">
+        <button className="button" onClick={() => setShowForm(true)}>
+          Update Services
+        </button>
+        {showForm && (
+          <div className="form">
+            <select
+              className="select"
+              value={selectedOption}
+              onChange={handleOptionChange}
+            >
+              <option value="link">Update Link</option>
+              <option value="pdf">Upload PDF</option>
+            </select>
+            <form onSubmit={handleSubmit} className="input-group">
+              {selectedOption === "link" && (
+                <div>
+                  <label className="input-label">New Link:</label>
+                  <input type="text" name="link" />
+                </div>
+              )}
+              {selectedOption === "pdf" && (
+                <div className="upload-pdf">
+                  <label className="input-label">Upload PDF:</label>
+                  <input type="file" name="pdf" />
+                </div>
+              )}
+              <button type="submit" className="submit-button">
+                Submit
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

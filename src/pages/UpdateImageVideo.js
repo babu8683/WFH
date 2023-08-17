@@ -44,14 +44,14 @@ function UpdateImageVideo() {
           <form onSubmit={handleSubmit} className="input-group">
             {selectedOption === "link" && (
               <div>
-                <label>New Link:</label>
-                <input type="text" name="link" />
+                <label>Select Image:</label>
+                <input type="file" name="image" />
               </div>
             )}
             {selectedOption === "pdf" && (
               <div>
-                <label>Upload PDF:</label>
-                <input type="file" name="pdf" />
+                <label>Select Video:</label>
+                <input type="file" name="video" />
               </div>
             )}
             {(selectedOption === "image" || selectedOption === "video") && (
