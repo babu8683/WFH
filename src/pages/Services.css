@@ -116,3 +116,9 @@
 .submit-button:hover {
   background-color: #2980b9;
 }
+
+@media only screen and (max-width: 400px) {
+.container{
+  margin-top: 100px ;
+}
+}
