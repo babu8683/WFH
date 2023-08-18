@@ -21,7 +21,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "How To Use",
+    title: "Learn About",
     path: "/howtouse",
 
     icon: <BiUserVoice.BiUserVoice />,
