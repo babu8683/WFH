@@ -31,7 +31,7 @@ function LearnAbout() {
 
   return (
     <div className="container">
-      <button className="button" onClick={() => setShowForm(!showForm)}>Update Services</button>
+      <button className="button" onClick={() => setShowForm(!showForm)}>Update Learn About</button>
       {showForm && (
         <div className="form">
           <select className="select" value={selectedOption} onChange={handleOptionChange}>

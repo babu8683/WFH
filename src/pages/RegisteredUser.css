@@ -1,0 +1,58 @@
+
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    vertical-align: middle;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-table th:first-child,
+  .user-table td:first-child {
+    width: 30%;
+  }
+  
+  .user-table th:nth-child(2),
+  .user-table td:nth-child(2) {
+    width: 30%;
+  }
+  
+  .user-table th:last-child,
+  .user-table td:last-child {
+    width: 10%;
+  }
+
+  
