@@ -9,6 +9,7 @@ import Certificate from "./pages/Certificate";
 import WasteCategory from "./pages/WasteCategory";
 import RegisteredUser from "./pages/RegisteredUser";
 import Profile from './pages/Profile'
+import EditProfile from './pages/EditProfile'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/wastecategory" element={<WasteCategory />} />
           <Route path="/user" element={<RegisteredUser />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
         </Routes>
       </Router>
     </>
