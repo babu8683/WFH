@@ -57,6 +57,9 @@ label {
   margin-bottom: 10px;
   color: #333;
 }
+.waste-label {
+  margin-right: 220px;
+}
 
 input[type="text"] {
   margin-top: 10px;

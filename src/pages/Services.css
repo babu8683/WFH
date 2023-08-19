@@ -18,8 +18,12 @@
   transition: background-color 0.3s ease;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-left: 50px;
   width: 100%;
   max-width: 300px;
+}
+.service-label{
+  margin-right: 70px;
 }
 
 .button:hover {
