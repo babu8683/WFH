@@ -72,6 +72,7 @@ function Navbar() {
           <ul className="dropdown-menu">
             <li>Edit Profile</li>
             <li onClick={logout}>Logout</li>
+            <li >Ma  le</li>
           </ul>
         )}
       </IconContext.Provider>
