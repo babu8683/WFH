@@ -54,7 +54,7 @@ function Navbar() {
         {/* Dropdown */}
         {dropdownVisible && (
           <ul className="dropdown-menu">
-            <li>Edit Profile</li>
+            <li>View Profile</li>
             <li>Logout</li>
           </ul>
         )}
