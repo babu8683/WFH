@@ -13,25 +13,39 @@ function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-  const toggleDropdown = () => setDropdownVisible(!dropdownVisible);
+  const openDropdown = () => setDropdownVisible(true);
+  const closeDropdown = () => setDropdownVisible(false);
 
+  // Use useEffect to add and remove event listeners
   useEffect(() => {
     const logo = document.querySelector(".logo");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
-    if (logo) {
-      logo.addEventListener("mouseenter", () => {
-        setDropdownVisible(true);
-      });
+    const handleLogoMouseEnter = () => {
+      setDropdownVisible(true);
+    };
 
-      logo.addEventListener("mouseleave", () => {
-        setDropdownVisible(false);
-      });
+    const handleDropdownMouseEnter = () => {
+      setDropdownVisible(true);
+    };
+
+    const handleMouseLeave = () => {
+      setDropdownVisible(false);
+    };
+
+    if (logo && dropdownMenu) {
+      logo.addEventListener("mouseenter", handleLogoMouseEnter);
+      dropdownMenu.addEventListener("mouseenter", handleDropdownMouseEnter);
+      logo.addEventListener("mouseleave", handleMouseLeave);
+      dropdownMenu.addEventListener("mouseleave", handleMouseLeave);
     }
 
     return () => {
-      if (logo) {
-        logo.removeEventListener("mouseenter");
-        logo.removeEventListener("mouseleave");
+      if (logo && dropdownMenu) {
+        logo.removeEventListener("mouseenter", handleLogoMouseEnter);
+        dropdownMenu.removeEventListener("mouseenter", handleDropdownMouseEnter);
+        logo.removeEventListener("mouseleave", handleMouseLeave);
+        dropdownMenu.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
   }, []);
@@ -60,12 +74,12 @@ function Navbar() {
           </Link>
 
           <Link to="/">
-            <h2 className="logo-title">Logo </h2>
+            <h2 className="logo-title">Logo</h2>
           </Link>
           <div
             className="logo"
-            onMouseEnter={toggleDropdown}
-            onMouseLeave={toggleDropdown}
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeDropdown}
           >
             <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />
