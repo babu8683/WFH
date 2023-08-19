@@ -16,7 +16,7 @@
 
 .welcome-user {
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
@@ -31,7 +31,6 @@
   top: 0;
   left: -100%;
   transition: 850ms;
-
 }
 
 .nav-menu.active {
@@ -62,7 +61,6 @@
 
 .nav-text a:hover {
   background-color: #175e0c;
-
 }
 
 .nav-menu-items {
@@ -81,7 +79,6 @@
 span {
   margin-left: 16px;
 }
-
 
 /* Navbar.css */
 .logo {
@@ -108,6 +105,7 @@ span {
 
 .logo-title {
   text-align: right;
+  cursor: pointer;
 }
 
 .dropdown-menu {
@@ -119,8 +117,6 @@ span {
   margin: 0;
   right: 0;
   top: 80px;
-
-
 }
 
 .logo-title {
@@ -137,22 +133,17 @@ span {
 .dropdown-menu li:hover {
   background-color: #175e0c;
   cursor: pointer;
-
 }
 
-.dropdown:hover+.dropdown-menu {
+.dropdown:hover + .dropdown-menu {
   display: block;
 }
 
-
-
 @media only screen and (max-width: 500px) {
-.logo-title {
-  display: none;
- 
+  .logo-title {
+    display: none;
   }
-  .logo{
+  .logo {
     padding-right: 10px;
   }
-
 }

@@ -1,0 +1,162 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+
+  .button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+
+  .form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+
+  .select {
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .select:focus {
+    border-color: #3498db;
+  }
+  
+
+  label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+
+  input[type="file"] {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="file"]:focus {
+    border-color: #3498db;
+  }
+  
+
+  textarea {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: #3498db;
+  }
+  
+
+  select {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #3498db;
+  }
+  
+
+  .submit-button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .submit-button:hover {
+    background-color: #27ae60;
+  }
+  
+
+
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    .button {
+      max-width: none;
+    }
+    .form {
+      padding: 20px;
+    }
+  }
+  
+  /* Animation*/
+  .form {
+    animation: fade-in 0.5s ease;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

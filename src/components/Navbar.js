@@ -23,8 +23,9 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
 
-        
+        <Link to='/'>
             <h2 className="logo-title">Logo </h2>
+            </Link>
           <div className="logo" onClick={toggleDropdown}>
             <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />

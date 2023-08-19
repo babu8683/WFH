@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Services.css'; 
+import './WasteCategory.css'; 
 
 function WasteCategory() {
   const [showForm, setShowForm] = useState(false);
