@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -14,14 +14,34 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
   const toggleDropdown = () => setDropdownVisible(!dropdownVisible);
-  console.log(dropdownVisible);
+
+  useEffect(() => {
+    const logo = document.querySelector(".logo");
+
+    if (logo) {
+      logo.addEventListener("mouseenter", () => {
+        setDropdownVisible(true);
+      });
+
+      logo.addEventListener("mouseleave", () => {
+        setDropdownVisible(false);
+      });
+    }
+
+    return () => {
+      if (logo) {
+        logo.removeEventListener("mouseenter");
+        logo.removeEventListener("mouseleave");
+      }
+    };
+  }, []);
 
   const logout = () => {
     axios
       .get("http://localhost:3004/logout")
       .then(function (res) {
         console.log(res.data.statusCode);
-        if (res.data.statusCode == 200) {
+        if (res.data.statusCode === 200) {
           alert("check");
           return (window.location.href = "http://localhost:3000/");
         }
@@ -42,7 +62,11 @@ function Navbar() {
           <Link to="/">
             <h2 className="logo-title">Logo </h2>
           </Link>
-          <div className="logo" onClick={toggleDropdown}>
+          <div
+            className="logo"
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}
+          >
             <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />
           </div>

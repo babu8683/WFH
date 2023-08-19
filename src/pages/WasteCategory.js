@@ -45,7 +45,7 @@ function WasteCategory() {
           </select>
           {selectedCategory && (
             <form onSubmit={handleSubmit} className="input-group">
-              <div>
+              <div className='waste-label'>
                 <label>Category Name:</label>
                 <input type="text" value={categoryName} onChange={handleNameChange} />
               </div>

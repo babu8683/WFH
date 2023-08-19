@@ -22,7 +22,7 @@ function Services() {
   return (
     <div className="container">
       <div className="container-data">
-        <button className="button" onClick={() => setShowForm(true)}>
+        <button className="button " onClick={() => setShowForm(true)}>
           Update Services
         </button>
         {showForm && (
@@ -37,7 +37,7 @@ function Services() {
             </select>
             <form onSubmit={handleSubmit} className="input-group">
               {selectedOption === "link" && (
-                <div>
+                <div className='service-label'>
                   <label className="input-label">New Link:</label>
                   <input type="text" name="link" />
                 </div>
