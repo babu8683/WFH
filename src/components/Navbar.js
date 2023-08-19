@@ -6,6 +6,8 @@ import { SidebarData } from "./SidebarData";
 import "./Navbar.css";
 import { IconContext } from "react-icons";
 import Logo from "../assest/nav-logo.jpeg";
+import axios from "axios";
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -14,6 +16,21 @@ function Navbar() {
   const showSidebar = () => setSidebar(!sidebar);
   const toggleDropdown = () => setDropdownVisible(!dropdownVisible);
   console.log(dropdownVisible);
+
+  const logout =() => {
+    axios.get("http://localhost:3004/logout")
+    .then(function(res){
+      console.log(res.data.statusCode);
+      if (res.data.statusCode == 200) {
+        alert("check");
+        return (window.location.href = "http://localhost:3000/");
+      }
+    })
+    .then(function(err) {
+      console.log(err)
+    })
+    ;
+  }
 
   return (
     <>
@@ -54,7 +71,7 @@ function Navbar() {
         {dropdownVisible && (
           <ul className="dropdown-menu">
             <li>Edit Profile</li>
-            <li>Logout</li>
+            <li onClick={logout}>Logout</li>
           </ul>
         )}
       </IconContext.Provider>
