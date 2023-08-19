@@ -28,7 +28,6 @@ function Navbar() {
       });
     }
 
-    // Cleanup: remove event listeners when component unmounts
     return () => {
       if (logo) {
         logo.removeEventListener("mouseenter");
@@ -63,7 +62,11 @@ function Navbar() {
           <Link to="/">
             <h2 className="logo-title">Logo </h2>
           </Link>
-          <div className="logo" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <div
+            className="logo"
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}
+          >
             <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />
           </div>
