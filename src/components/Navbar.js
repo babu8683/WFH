@@ -40,8 +40,9 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
 
-        
+        <Link to='/'>
             <h2 className="logo-title">Logo </h2>
+            </Link>
           <div className="logo" onClick={toggleDropdown}>
             <p className="welcome-user">Welcome User</p>
             <img src={Logo} alt="Logo" />
@@ -70,9 +71,14 @@ function Navbar() {
         {/* Dropdown */}
         {dropdownVisible && (
           <ul className="dropdown-menu">
+<<<<<<< HEAD
             <li>Edit Profile</li>
             <li onClick={logout}>Logout</li>
             <li >Ma  le</li>
+=======
+            <li>View Profile</li>
+            <li>Logout</li>
+>>>>>>> 9dc32e92bf39378b93caf675379b7fbab5076a9b
           </ul>
         )}
       </IconContext.Provider>

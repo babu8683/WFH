@@ -26,17 +26,14 @@
   background-color: #2980b9;
 }
 
-.container-data {
-  width: 100%;
-  max-width: 400px;
-}
-
 .form {
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
 }
 
 .select {
@@ -54,15 +51,14 @@
   border-color: #3498db;
 }
 
-.input-label {
+label {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
   color: #333;
 }
 
-input[type="text"],
-input[type="file"] {
+input[type="text"] {
   margin-top: 10px;
   padding: 12px;
   width: 100%;
@@ -73,8 +69,23 @@ input[type="file"] {
   transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus,
-input[type="file"]:focus {
+input[type="text"]:focus {
+  border-color: #3498db;
+}
+
+textarea {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+textarea:focus {
   border-color: #3498db;
 }
 
@@ -95,18 +106,22 @@ input[type="file"]:focus {
   background-color: #27ae60;
 }
 
-/* Responsive design for smaller screens */
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 10px;
+.container:hover .button {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.form {
+  animation: fade-in 0.5s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  .button {
-    max-width: none;
-  }
-  .container-data {
-    max-width: 100%;
-  }
-  .form {
-    padding: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

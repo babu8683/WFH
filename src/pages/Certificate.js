@@ -1,8 +1,13 @@
 import React from 'react'
+import './Services.css'
 
 const Certificate = () => {
   return (
-    <div>Certificate</div>
+    <div className='container '>
+    
+    <h1>Working On It....</h1>
+    
+    </div>
   )
 }
 
