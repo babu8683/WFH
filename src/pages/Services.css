@@ -113,4 +113,7 @@ input[type="file"]:focus {
   .form {
     padding: 20px;
   }
+  .service-label{
+    margin-right: 0px;
+  }
 }
